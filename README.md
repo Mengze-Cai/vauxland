@@ -1,49 +1,79 @@
 # Vauxland
 
-### 每日 AI 与开源项目雷达 · Daily AI & Open-Source Radar
+每日 AI 与开源项目雷达 · Daily AI & Open-Source Radar
 
 **先看懂一个项目能做什么，再决定是否值得打开。**
 
-Vauxland 是一个以 AI 为主的产品与开源项目发现网站，将每日热门项目、中文用途解读、AI 评测入口和行业情报来源整理在一起。
+AI 产品和开源项目更新很快，真正费时间的不是找到链接，而是判断：它解决什么问题、适不适合自己、是否值得继续研究。
 
-**在线体验：[www.vauxland.com](https://www.vauxland.com/)**
+Vauxland 把每日项目信号整理为中文用途说明，配合历史日报、搜索收藏、情报来源与评测导航，帮助你从“发现一个名字”走到“理解它的价值”。以 AI 为主，也保留部分相关开发工具与开源生态项目。
 
-## 主要功能
+[访问网站](https://www.vauxland.com/) · [浏览全部项目](https://www.vauxland.com/discover?ds=all) · [完整使用指南](USAGE.md) · [反馈问题](https://github.com/Mengze-Cai/vauxland/issues)
 
-| 功能 | 你能获得什么 |
-| --- | --- |
-| 每日项目雷达 | 浏览当期热门项目，快速了解用途、推荐理由与 GitHub 热度。 |
-| 最近 30 天历史 | 切换日期，回看对应日期已经发布的项目快照。 |
-| 搜索与分类 | 按关键词、分类和日期查找项目，也可以搜索全部项目。 |
-| 项目详情 | 查看中文介绍、原始来源，以及有可靠资料时展示的 README 入门说明。 |
-| 本机收藏 | 将感兴趣的项目保存在当前设备浏览器中，方便稍后查看。 |
-| AI 评测导航 | 按能力方向查找模型与 Agent 评测网站，了解适用范围和方法说明。 |
-| 情报来源目录 | 查找产品、模型、论文、社区和行业动态的资料入口。 |
+> 这是网站介绍、使用说明和公开反馈仓库，不是网站源码仓库。直接访问网站即可使用，无需克隆、安装或部署；浏览和本机收藏不需要注册账号。
 
-## 从这里开始
+## 第一次来，建议这样用
 
-- [浏览最新一期](https://www.vauxland.com/)
-- [搜索与发现项目](https://www.vauxland.com/discover)
-- [AI 评测导航](https://www.vauxland.com/benchmarks)
-- [情报来源](https://www.vauxland.com/sources)
+1. **看看最近有什么值得关注。** 打开[首页](https://www.vauxland.com/)，先看当前日报日期，再读项目的中文介绍和关注理由。
+2. **带着问题找工具。** 到[完整项目库](https://www.vauxland.com/discover?ds=all)，搜索“智能体”“视频”“推理”等用途，配合分类、项目类型和“只看 AI 项目”缩小范围。
+3. **看懂之后，再去原站。** 打开项目详情，核对官网、GitHub、许可证与数据日期；有可靠资料时，还能看到官方 README 的入门说明。
+4. **把值得研究的留下。** 点击心形收藏，在[我的收藏](https://www.vauxland.com/saved)集中回看，并通过导出／导入文件迁移清单。
 
-适合想寻找 AI 工具的使用者、关注新项目的开发者，以及希望快速了解产品用途的独立创作者。
+想回看某一天的榜单？在首页或发现页的日期下拉框选择对应的已发布日报。具体操作和常见问题见[完整使用指南](USAGE.md)。
 
-## 内容说明
+## 网站可以帮你做什么
 
-- 项目资料来自 GitHub Trending、订阅来源及项目公开文档；中文介绍由 AI 辅助整理，经人工审核后发布。
-- 官方当日新增 Stars 与“较上次入榜”的变化值采用不同口径，页面会分别标注。
-- 评测与情报页面主要提供原始网站入口，不代表 Vauxland 自行完成了全部评测。
-- 榜单热度不代表项目质量、安全性或适用性；使用前请查看原项目文档、许可证和最新状态。
+| 页面 | 适合解决的问题 | 主要功能 |
+| --- | --- | --- |
+| [首页](https://www.vauxland.com/) | 最近有什么值得打开？ | 最新已发布日报、焦点项目、中文用途说明、热度信号和历史日期切换。 |
+| [发现](https://www.vauxland.com/discover) | 有没有适合我用途的项目？ | 按单期或全库搜索，组合分类、项目类型、AI 筛选与排序，继续加载更多结果。 |
+| 项目详情（从卡片进入） | 它到底做什么，下一步去哪里？ | 中文说明、关注理由、原始资料、热度、许可与官方链接；有可靠内容时展示 README 入门线索。 |
+| [来源](https://www.vauxland.com/sources) | 应该去哪里继续查资料？ | 产品、模型、论文、社区等网站的介绍、适用场景、分类和访问方式筛选。 |
+| [评测](https://www.vauxland.com/benchmarks) | 选模型或 Agent，应该看什么榜？ | 按能力方向和评测类型找入口，展开指标、适用范围、方法与注意事项。 |
+| [收藏](https://www.vauxland.com/saved) | 如何保存和整理研究清单？ | 当前浏览器收藏、清单内搜索、JSON 导出与合并导入。 |
+| [功能说明](https://www.vauxland.com/features) | 数据从哪来，功能有哪些边界？ | 网站工作流，以及日期、热度、搜索范围和收藏机制说明。 |
 
-## 反馈与建议
+## 四件最容易误解的事
 
-发现介绍有误、链接失效，或希望推荐一个产品？欢迎 [提交 Issue](https://github.com/Mengze-Cai/vauxland/issues/new)，并附上项目链接与问题说明。
+**“最近 30 天”不是整个项目库的寿命。** 每日快照保留最近 30 天内已发布的版本；“全部项目”是累计收录且仍公开可见的项目资料，不限于今天或最近一期。
 
-如果觉得网站有帮助，欢迎 Star 本介绍仓库，或把 [Vauxland](https://www.vauxland.com/) 分享给朋友。
+**发现页默认日报，首页搜索默认全库。** 直接进入发现页、未输入搜索词时，默认最新已发布日报；从首页发起搜索、未指定日期时搜索全库。选定日期后，关键词只筛选该期。想扩大范围，切换“浏览范围 → 全部项目”。
 
-## About this repository
+**Stars 是热度信号，不是产品评分。** “当日新增”来自采集时 GitHub Trending 的标注；“较上次入榜”是与上次可用记录的累计差值，可能跨多天；“累计 Stars”是采集时总量。三者不能混为同一天增长，也不是实时数据。
 
-Vauxland helps you discover AI products and open-source projects through Chinese-language explanations, daily editions, a rolling 30-day archive, search, local bookmarks, and curated benchmark and information-source directories.
+**来源与评测是导航，不是已经打通的数据库。** 收录一个网站不表示已接入它的数据、已关联每天的项目，或 Vauxland 自行复测过它的成绩。API／RSS 标签描述原站的访问方式，不代表本站接入状态。
 
-This repository is a **product introduction and feedback hub**, not the website source-code repository. It does not contain website source code, credentials, production data, or deployment configuration.
+## 内容如何产生
+
+公开项目信号 → 补全仓库资料 → AI 辅助整理中文说明 → 人工对照审核 → 发布带日期的日报。
+
+项目资料主要来自 GitHub Trending、已配置的订阅来源与项目公开文档。自动化负责准备资料和待审核文案，审核与发布仍由管理员决定。因此首页展示的是**最新已发布一期**，不承诺每天固定时刻更新，也不把未发布的日期显示为已有日报。
+
+中文说明用于帮助理解，不等于逐项实测、安全审计或购买建议。开始使用前，请回到项目原站核对最新状态、运行环境、许可证、模型／API 费用和部署成本。
+
+## 收藏与隐私
+
+- 收藏保存在当前设备、当前浏览器，不会因为登录 GitHub 或其他账号就自动跨设备同步。
+- 换浏览器、使用无痕模式或清除站点数据前，请先导出收藏 JSON；在另一浏览器导入会合并清单，不覆盖原有记录。
+- 历史日期过期后，收藏会提示并尝试展示仍可见的最新资料；收藏不是网页全文或历史快照的永久备份。
+- GitHub Issues 是公开空间。反馈时请勿提交 API Key、密码、Token、个人联系方式或未经脱敏的后台截图。
+
+## 反馈与推荐
+
+欢迎[提交 Issue](https://github.com/Mengze-Cai/vauxland/issues/new)，报告错误、推荐项目或讨论功能。为便于核对，请提供：
+
+1. 页面／项目链接，以及对应的日报日期（如有）。
+2. 你做了什么、实际看到什么、期望是什么。
+3. 如涉及介绍或数据错误，附上支持更正的官方资料链接；截图请先脱敏。
+
+推荐项目时，补充官网或 GitHub 地址、主要用途和推荐理由即可。推荐不等于保证收录，也请勿在 Issue 中粘贴第三方受版权保护的全文。
+
+如果网站帮你发现了有价值的项目，欢迎 Star 本介绍仓库，或把 [Vauxland](https://www.vauxland.com/) 分享给同样关注 AI 的朋友。
+
+## English overview
+
+Vauxland is an AI-first discovery website for products and open-source projects. It combines Chinese-language explanations, published daily editions, a rolling 30-day edition archive, searchable project profiles, device-local bookmarks, and curated information-source and benchmark directories.
+
+Visit [vauxland.com](https://www.vauxland.com/) to use the product. No installation is required. The directories link to external resources; they do not imply full data integration or independent benchmark replication. Bookmark lists stay in your current browser and can be exported and imported.
+
+This repository is a **product introduction, user guide, and public feedback hub**. It does not distribute the website source code, credentials, production data, or deployment configuration.
