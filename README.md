@@ -19,29 +19,31 @@ Vauxland 把每日项目信号整理为中文用途说明，配合历史日报�
 3. **看懂之后，再去原站。** 打开项目详情，核对官网、GitHub、许可证与数据日期；有可靠资料时，还能看到官方 README 的入门说明。
 4. **把值得研究的留下。** 点击心形收藏，在[我的收藏](https://www.vauxland.com/saved)集中回看，并通过导出／导入文件迁移清单。
 
-想回看某一天的榜单？在首页或发现页的日期下拉框选择对应的已发布日报。具体操作和常见问题见[完整使用指南](USAGE.md)。
+想回看某一天？点击首页日期或发现页的“浏览范围”，打开日历，选择有数据的已发布日期；想持续跟进，可以[订阅日报 RSS](https://www.vauxland.com/feeds/daily.xml)。具体操作见[完整使用指南](USAGE.md)。
 
 ## 网站可以帮你做什么
 
 | 页面 | 适合解决的问题 | 主要功能 |
 | --- | --- | --- |
-| [首页](https://www.vauxland.com/) | 最近有什么值得打开？ | 最新已发布日报、焦点项目、中文用途说明、热度信号和历史日期切换。 |
-| [发现](https://www.vauxland.com/discover) | 有没有适合我用途的项目？ | 按单期或全库搜索，组合分类、项目类型、AI 筛选与排序，继续加载更多结果。 |
-| 项目详情（从卡片进入） | 它到底做什么，下一步去哪里？ | 中文说明、关注理由、原始资料、热度、许可与官方链接；有可靠内容时展示 README 入门线索。 |
-| [来源](https://www.vauxland.com/sources) | 应该去哪里继续查资料？ | 产品、模型、论文、社区等网站的介绍、适用场景、分类和访问方式筛选。 |
-| [评测](https://www.vauxland.com/benchmarks) | 选模型或 Agent，应该看什么榜？ | 按能力方向和评测类型找入口，展开指标、适用范围、方法与注意事项。 |
+| [首页与日报](https://www.vauxland.com/) | 最近有什么值得打开？ | 最新已发布一期、本期概览、焦点项目与最多 5 条额外项目导读；日历可回看历史。 |
+| [发现](https://www.vauxland.com/discover) | 有没有适合我用途的项目？ | 查看单期完整榜单或累计项目库，组合关键词、分类、项目类型、AI 筛选与排序，分批加载结果。 |
+| 项目详情（从卡片进入） | 它到底做什么，下一步去哪里？ | 中文用途、关注理由、资料与官方链接；有可靠依据时展示 README 入门说明，并标明检查日期。 |
+| [来源](https://www.vauxland.com/sources) | 应该去哪里继续查资料？ | 先看核心入口，再按全部分类浏览产品、模型、论文、社区等网站；说明各站用途与访问方式。 |
+| [评测](https://www.vauxland.com/benchmarks) | 选模型或 Agent，应该看什么榜？ | 核心评测入口、能力分类与搜索；展开查看主要指标、适用范围、方法和局限。 |
 | [收藏](https://www.vauxland.com/saved) | 如何保存和整理研究清单？ | 当前浏览器收藏、清单内搜索、JSON 导出与合并导入。 |
 | [功能说明](https://www.vauxland.com/features) | 数据从哪来，功能有哪些边界？ | 网站工作流，以及日期、热度、搜索范围和收藏机制说明。 |
 
 ## 四件最容易误解的事
 
-**“最近 30 天”不是整个项目库的寿命。** 每日快照保留最近 30 天内已发布的版本；“全部项目”是累计收录且仍公开可见的项目资料，不限于今天或最近一期。
+**归档不再限于最近 30 天。** 每日快照长期保存，公开日历可选择自 **2026 年 9 月 22 日**起全部已有的已发布日报。起始日之前、缺期、未发布及未来日期置灰；长期保存不等于每天都有一期。“全部项目”则汇总累计收录且仍公开可见的资料，并非把同一项目每天重复列出。
 
 **发现页默认日报，首页搜索默认全库。** 直接进入发现页、未输入搜索词时，默认最新已发布日报；从首页发起搜索、未指定日期时搜索全库。选定日期后，关键词只筛选该期。想扩大范围，切换“浏览范围 → 全部项目”。
 
 **Stars 是热度信号，不是产品评分。** “当日新增”来自采集时 GitHub Trending 的标注；“较上次入榜”是与上次可用记录的累计差值，可能跨多天；“累计 Stars”是采集时总量。三者不能混为同一天增长，也不是实时数据。
 
 **来源与评测是导航，不是已经打通的数据库。** 收录一个网站不表示已接入它的数据、已关联每天的项目，或 Vauxland 自行复测过它的成绩。API／RSS 标签描述原站的访问方式，不代表本站接入状态。
+
+首页只展示精选导读，不等于当天只收录了这几个项目。通过“查看本期完整榜单”进入发现页，即可浏览该期完整已发布列表；日报还有独立的 `/daily/YYYYMMDD` 链接，便于收藏和分享。
 
 ## 内容如何产生
 
@@ -51,11 +53,19 @@ Vauxland 把每日项目信号整理为中文用途说明，配合历史日报�
 
 中文说明用于帮助理解，不等于逐项实测、安全审计或购买建议。开始使用前，请回到项目原站核对最新状态、运行环境、许可证、模型／API 费用和部署成本。
 
+## 订阅日报 RSS
+
+把下面的地址添加到 Inoreader 或其他支持 RSS 的阅读器：
+
+**[Vauxland Daily RSS](https://www.vauxland.com/feeds/daily.xml)**
+
+订阅提供最近 20 期已发布日报的项目名称、中文用途与带日期的链接；历史完整归档仍以网站日历为准。RSS 跟随发布更新，不是实时 Stars 接口，也不会包含未审核草稿。若某期没有发布，不会用空白记录冒充新一期。
+
 ## 收藏与隐私
 
 - 收藏保存在当前设备、当前浏览器，不会因为登录 GitHub 或其他账号就自动跨设备同步。
 - 换浏览器、使用无痕模式或清除站点数据前，请先导出收藏 JSON；在另一浏览器导入会合并清单，不覆盖原有记录。
-- 历史日期过期后，收藏会提示并尝试展示仍可见的最新资料；收藏不是网页全文或历史快照的永久备份。
+- 收藏会保留关联的日报日期；如果对应快照不可用，页面会提示并尝试显示仍可见的最新资料。导出文件是清单备份，不包含网页全文或完整历史数据。
 - GitHub Issues 是公开空间。反馈时请勿提交 API Key、密码、Token、个人联系方式或未经脱敏的后台截图。
 
 ## 反馈与推荐
@@ -72,8 +82,12 @@ Vauxland 把每日项目信号整理为中文用途说明，配合历史日报�
 
 ## English overview
 
-Vauxland is an AI-first discovery website for products and open-source projects. It combines Chinese-language explanations, published daily editions, a rolling 30-day edition archive, searchable project profiles, device-local bookmarks, and curated information-source and benchmark directories.
+Vauxland is an AI-first discovery website for products and open-source projects. It combines Chinese-language explanations, published daily editions, a long-term calendar archive of available editions from September 22, 2026, searchable project profiles, device-local bookmarks, daily RSS, and curated information-source and benchmark directories.
 
 Visit [vauxland.com](https://www.vauxland.com/) to use the product. No installation is required. The directories link to external resources; they do not imply full data integration or independent benchmark replication. Bookmark lists stay in your current browser and can be exported and imported.
 
 This repository is a **product introduction, user guide, and public feedback hub**. It does not distribute the website source code, credentials, production data, or deployment configuration.
+
+---
+
+说明更新：2026-10-23。功能与可用数据以[在线网站](https://www.vauxland.com/)为准。
