@@ -1,6 +1,6 @@
 # Vauxland
 
-每日 AI 与开源项目雷达 · Daily AI & Open-Source Radar
+每天看懂一批 AI 与开源项目 · Daily AI & Open-Source Radar
 
 **先看懂一个项目能做什么，再决定是否值得打开。**
 
@@ -11,6 +11,14 @@ Vauxland 把每日项目信号整理为中文用途说明，配合历史日报�
 [访问网站](https://www.vauxland.com/) · [浏览全部项目](https://www.vauxland.com/discover?ds=all) · [完整使用指南](USAGE.md) · [反馈问题](https://github.com/Mengze-Cai/vauxland/issues)
 
 > 这是网站介绍、使用说明和公开反馈仓库，不是网站源码仓库。直接访问网站即可使用，无需克隆、安装或部署；浏览和本机收藏不需要注册账号。
+
+## 当前版本，先了解这几件事
+
+- **首页是导读，不是全部内容。** 先看本期概览和一个焦点，再读最多 5 条额外项目导读；完整榜单在发现页。
+- **历史按日历回看。** 每日快照长期保存，不再限于最近 30 天；公开日历从 2026 年 9 月 22 日起开放已有的已发布日报。
+- **搜索先看范围。** 首页搜索默认全库；发现页可以在某期日报与“全部项目”之间切换，支持分类、AI 筛选和分批加载。
+- **准备、审核、发布分开。** 自动化收集资料和准备中文文案；管理员确认内容后单独发布。生成成功不等于事实已核实，“审核通过”也不等于前台已更新。
+- **继续研究有出口。** 详情保留原始资料和官方链接，收藏可导出／导入，日报可通过 RSS 订阅；来源与评测页面提供进一步查证的外部入口。
 
 ## 第一次来，建议这样用
 
@@ -53,6 +61,10 @@ Vauxland 把每日项目信号整理为中文用途说明，配合历史日报�
 
 中文说明用于帮助理解，不等于逐项实测、安全审计或购买建议。开始使用前，请回到项目原站核对最新状态、运行环境、许可证、模型／API 费用和部署成本。
 
+已发布日报保存独立版本。管理员重新拉取、编辑或生成草稿时，前台不会立即被草稿覆盖；需要审核并重新发布，公开内容才会切换。资料仍可能因纠错、下架或人工清理而改变，长期保存不等于永不变更。
+
+管理员可阅读[后台准备、审核与发布说明](USAGE.md#admin)：包括“一键审核通过”的作用范围、失败／过期文案的处理，以及为什么审核后仍可能收到未发布提醒。后台只对已获授权的管理员开放，不是访客注册入口。
+
 ## 订阅日报 RSS
 
 把下面的地址添加到 Inoreader 或其他支持 RSS 的阅读器：
@@ -86,8 +98,10 @@ Vauxland is an AI-first discovery website for products and open-source projects.
 
 Visit [vauxland.com](https://www.vauxland.com/) to use the product. No installation is required. The directories link to external resources; they do not imply full data integration or independent benchmark replication. Bookmark lists stay in your current browser and can be exported and imported.
 
+Collection and copy preparation are automated; administrators make the review and publication decisions. Approval and publication are separate steps, and live editions do not change until a new version is published. AI-assisted descriptions and popularity signals are not independent product tests or safety endorsements.
+
 This repository is a **product introduction, user guide, and public feedback hub**. It does not distribute the website source code, credentials, production data, or deployment configuration.
 
 ---
 
-说明更新：2026-10-23。功能与可用数据以[在线网站](https://www.vauxland.com/)为准。
+说明更新：2026-11-16。功能与可用数据以[在线网站](https://www.vauxland.com/)为准。
